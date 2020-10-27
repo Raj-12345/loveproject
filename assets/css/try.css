@@ -1,0 +1,59 @@
+/* .body{
+  position: fixed;
+}
+
+.themed-grid-col {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    object-position: center;
+    background-color: rgba(86, 61, 124, .15);
+    border: 1px solid rgba(86, 61, 124, .2);
+  }
+  
+  .themed-container {
+    padding: 15px;
+    margin-bottom: 30px;
+    object-position: center;
+    background-color: rgba(0, 123, 255, .15);
+    border: 1px solid rgba(0, 123, 255, .2);
+  }
+
+
+.themed-one {
+  background-color: rgba(196, 170, 235, 0.15);
+}
+
+.themed {
+  background-color: rgba(196, 170, 235, 0.15);
+} */
+
+.themed-grid-col {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  object-position: center;
+  background-color: rgba(86, 61, 124, .15);
+  border: 1px solid rgba(86, 61, 124, .2);
+}
+
+.themed-container {
+  padding: 15px;
+  margin-bottom: 30px;
+  object-position: center;
+  background-color: rgba(0, 123, 255, .15);
+  border: 1px solid rgba(0, 123, 255, .2);
+}
+
+/* Nav-Bar css  */
+.themed-grids {
+  background-color: #fb6340;
+}
+
+/* left-Side first-box */
+.themed-one {
+background-color: rgba(196, 170, 235, 0.15);
+}
+
+/* Left-side second-Box */
+.themed {
+background-color: rgba(196, 170, 235, 0.15);
+}
