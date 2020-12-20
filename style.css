@@ -1,0 +1,84 @@
+html {
+    scroll-behavior: smooth;
+}
+@media screen and (min-width: 768px) {
+    .intro-img {
+        margin-left: -80px;
+    }
+    
+    .header-img {
+        height: 10vw;
+    }
+}
+/* On screens that are 992px or less */
+@media screen and (min-width: 768px) {
+    .intro-img {
+        margin-top: -50px;
+    }
+    
+    .header-img {
+        height: 20vw;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .card-img{
+        height: auto;
+        width: 100%;
+        padding: 3% 9% 5% 0;
+    }
+    
+    .button{
+        margin-right: 2%;
+    }
+    
+    .desc-section{
+        margin-top: -15%;
+    }
+}
+
+.button{
+    float: right;
+    margin-bottom: 1%;
+}
+
+.title{
+    margin-left: 5%;
+    margin-top: -5%;
+}
+.region{
+    font-size: 1rem;
+}
+.card-img{
+    width: 100%;
+    height: auto;
+    margin: 5%;
+}
+
+ul{
+    list-style: none;
+    margin-right: 10%;
+    margin-left: -2.5%;
+}
+p.card-title{
+    font-size: 1rem;
+    font-weight: 700;
+}
+h4.card-title{
+    color: purple;
+    font-family: 'Times New Roman', Times, serif;
+}
+#loadMore {
+    color: rgb(87, 0, 128);
+    cursor: pointer;
+}
+#loadMore:hover {
+    color: black;
+}
+#showLess {
+    color: rgb(73, 13, 88);
+    cursor: pointer;
+}
+#showLess:hover {
+    color: black;
+}

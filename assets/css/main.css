@@ -1,0 +1,89 @@
+body {
+  overflow-x: hidden;
+}
+.themed-grid-col {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  object-position: center;
+  background-color: rgba(86, 61, 124, .15);
+  border: 1px solid rgba(86, 61, 124, .2);
+}
+
+.themed-container {
+  padding: 15px;
+  margin-bottom: 30px;
+  object-position: center;
+  background-color: rgba(0, 123, 255, .15);
+  border: 1px solid rgba(0, 123, 255, .2);
+}
+
+/* Nav-Bar css  */
+.themed-grids {
+  background-color: #4053fb;
+}
+
+/* left-Side first-box */
+.themed-one {
+background-color: rgba(196, 170, 235, 0.15);
+}
+
+/* Left-side second-Box */
+.themed {
+background-color: rgba(196, 170, 235, 0.15);
+}
+
+
+.filterbutton {
+  display: none;
+  margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 768px) {
+  .dropdownbox1 {
+    display: none;
+  }
+
+  .filterbutton {
+    position:stiky;
+    bottom:0px;
+    display:block;
+    width: 50%;
+    height: 50px;
+    margin-bottom: 3px;
+    /* margin: 0 5px 0 0px; */
+  }
+
+  .searchbox1 {
+    display:block;
+  }
+
+  .searchbox2 {
+    display:none;
+  }
+  
+  .aside{
+    display: none;
+  }
+}
+/* 
+.btn{
+  width: 50%;
+  height: 50px;
+}  */
+
+.sticky{
+  position:sticky;
+  top:0px;
+  z-index:100;
+  background-color: #8E68D5;
+}
+
+.page-footer{
+  z-index: 2;
+  background-color: #E6E2EB;
+}
+
+.nav-color{
+   background-color:#8E68D5;
+   color:#ffffff;
+}
