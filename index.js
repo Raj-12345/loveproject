@@ -22,9 +22,12 @@ async function renderStates() {
         html += htmlSegment;
     });
   html=html+'</select>';
-    let container = document.querySelector('.insertstate');
-    console.log(container);
-    container.innerHTML = html;
+    let container1 = document.querySelector('.insertstate');
+    let container2 = document.querySelector('.insertstateformodel');
+    let container3 = document.querySelector('.insertstateformodelsearch');
+    container1.innerHTML = html;
+    container2.innerHTML = html;
+    container3.innerHTML = html;
     console.log("this is calling"+html);
 }
 // renderStates();
@@ -49,8 +52,10 @@ async function renderLeaders() {
         html += htmlSegment;
     });
     html=html+'</select>';
-    let container = document.querySelector('.leaders');
-    container.innerHTML = html;
+    let container1 = document.querySelector('.leaders');
+    let container2 = document.querySelector('.leadersformodel');
+    container1.innerHTML = html;
+    container2.innerHTML = html;
 }
 
 
