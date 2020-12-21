@@ -1,5 +1,7 @@
 // state function.
+
 async function getStates() {
+    console.log("get states clled")
     let url = 'https://nitimanthan.in/ylcube/states/';
     try {
         let res = await fetch(url);
@@ -10,18 +12,20 @@ async function getStates() {
 }
 
 async function renderStates() {
+    console.log("render states clled")
     let state = await getStates();
-    let html = '';
+    let html = ' <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">';
+    console.log(state);
     state.forEach(stateData => {
-        let htmlSegment = `<div class="state">
-        <div class="stateParticular"><a href="stateAll:">${stateData}</a></div>
-                        </div>`;
-
+    
+        let htmlSegment =`<option>${stateData[1]}</option>`
         html += htmlSegment;
     });
-
-    let container = document.querySelector('.states');
+  html=html+'</select>';
+    let container = document.querySelector('.insertstate');
+    console.log(container);
     container.innerHTML = html;
+    console.log("this is calling"+html);
 }
 // renderStates();
 
@@ -38,15 +42,13 @@ async function getLeaders() {
 
 async function renderLeaders() {
     let leader = await getLeaders();
-    let html = '';
+    let html = '<select class="custom-select mr-sm-2" id="inlineFormCustomSelect">';
     leader.forEach(leaderData => {
-        let htmlSegment = `<div class="leader">
-        <div class="leaderParticular"><a href="leaderAll:">${leaderData}</a></div>   
-        </div>`;
+        let htmlSegment = `<option>${leaderData[1]}</option>`;
 
         html += htmlSegment;
     });
-
+    html=html+'</select>';
     let container = document.querySelector('.leaders');
     container.innerHTML = html;
 }
